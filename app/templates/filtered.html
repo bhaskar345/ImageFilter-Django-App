@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Document</title>
+    <style>
+        h4{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+    </style>
+</head>
+<body>
+    <div style="font-family: Georgia, 'Times New Roman', Times, serif;" class="d-flex align-items-center justify-content-center">
+
+        <h2>Your Filtered Image..</h2>
+
+    </div>
+    <div class="d-flex align-items-center justify-content-center row">
+
+        <div class="col-sm-5 col-5">
+
+            <h4 class="d-flex justify-content-center">Original</h4>
+            <img src="{{obj.Original.url}}" class="img-thumbnail" style="width: 35vw; height: 50vh;">
+
+        </div>
+
+        <div class="col-sm-5 col-5">
+
+            <h4 class="d-flex justify-content-center">Filtered</h4>
+            <img src="{{obj.Img.url}}" class="img-thumbnail" alt="can not find" style="width: 35vw; height: 50vh;" />
+            
+        </div>
+
+    </div>
+
+    <div class="d-flex align-items-center justify-content-center">
+        <a href="{{obj.Img.url}}" class="btn btn-sm btn-primary my-2" download="{{obj.Img.url}}">Download</a>
+    </div>
+
+    <div class="d-flex align-items-center justify-content-center">
+        <a href="/" class="btn btn-sm btn-primary my-2">&#8592; Back</a>
+    </div>
+
+</body>
+</html>
